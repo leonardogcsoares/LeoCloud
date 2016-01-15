@@ -22,3 +22,18 @@ providersApp.config(function ($routeProvider, $interpolateProvider){
        // Any other route just changes back to /providers
        .otherwise({ redirectTo: '/'});
 });
+
+var loginApp = angular.module('loginApp', ['ngRoute']);
+
+loginApp.config(function ($routeProvider, $interpolateProvider) {
+    $interpolateProvider.startSymbol('[[').endSymbol(']]');
+
+    $routeProvider
+        .when('/',
+        {
+            controller: 'LoginController'
+            //templateUrl: '/app/partials/providers.html'
+        })
+        // Any other route just changes back to /providers
+        .otherwise({ redirectTo: '/'});
+});

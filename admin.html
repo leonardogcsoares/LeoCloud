@@ -1,0 +1,161 @@
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css"
+    rel="stylesheet" type="text/css">-->
+    <link href="Content/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="Content/bootstrap-responsive.min.css" rel="stylesheet" type="text/css">
+    <link href="Content/bootstrap-slider.min.css" rel="stylesheet" type="text/css">
+    <link href="Content/admin.css" rel="stylesheet" type="text/css">
+  </head><body ng-app="loginApp" ng-controller="LoginController">
+    <div class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><span>LeoCloud</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-ex-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li class="active">
+              <a href="admin">Admin</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="section hide" id="register-provider-form">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <div class="col-md-12">
+                <h4>Logged in as<strong> Admin</strong></h4>
+                <br>
+                <br>
+              <form class="form-horizontal display-relative" role="form">
+                <div class="form-group">
+                  <div class="col-sm-offset-2 col-sm-2">
+                    <label class="control-label">Provedor</label>
+                  </div>
+                  <div class="col-sm-6">
+                    <label class="radio-inline">
+                      <input type="radio" name="provedorRadio">AWS</label>
+                    <label class="radio-inline">
+                      <input type="radio" name="provedorRadio">Google Cloud</label>
+                    <label class="radio-inline">
+                      <input type="radio" name="provedorRadio">Microsoft</label>
+                    <label class="radio-inline">
+                      <input type="radio" name="provedorRadio">HP</label>
+                    <label class="radio-inline">
+                      <input type="radio" name="provedorRadio">Other</label>
+                  </div>
+                </div>
+                <br>
+                <div class="form-group">
+                  <div class="col-sm-4">
+                    <label for="inputNome" class="control-label">Nome</label>
+                  </div>
+                  <div class="col-sm-6">
+                    <input type="text" class="form-control" id="inputNome" placeholder="Nome">
+                  </div>
+                </div>
+                <br>
+                <div class="form-group">
+                  <div class="col-sm-4">
+                    <label for="inputCpu" class="control-label">CPUs</label>
+                  </div>
+                  <div class="col-sm-6">
+                    <input type="text" class="form-control" id="inputCpu" placeholder="">
+                  </div>
+                </div>
+                <br>
+                <div class="form-group">
+                  <div class="col-sm-4">
+                    <label for="inputRam" class="control-label">Ram (GB)</label>
+                  </div>
+                  <div class="col-sm-6">
+                    <input type="text" class="form-control" id="inputRam" placeholder="">
+                  </div>
+                </div>
+                <br>
+                <div class="form-group">
+                  <div class="col-sm-4">
+                    <label for="inputDisco" class="control-label">Disco (GB)</label>
+                  </div>
+                  <div class="col-sm-6">
+                    <input type="text" class="form-control" id="inputDisco" placeholder="">
+                  </div>
+                </div>
+                <br>
+                <div class="form-group">
+                  <div class="col-sm-4">
+                    <label for="inputPrice" class="control-label">Preço (R$)</label>
+                  </div>
+                  <div class="col-sm-6">
+                    <input type="number" class="form-control" id="inputPrice" placeholder="">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-success">Cadastrar Novo</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="login-modal-admin" class="section">
+      <div class="container text-center">
+        <div class="row">
+          <div class="modal fade in col-md-6 col-md-offset-3" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false" style="display: block;">
+            <div class="modal-dialog">
+              <div class="loginmodal-container">
+                <h1>Login to Admin</h1>
+                <br>
+                <form>
+                  <input type="text" name="user" placeholder="Username" ng-model="adminUsername">
+                  <input type="password" name="pass" placeholder="Password" ng-model="adminPassword">
+                  <input type="submit" name="login" class="login loginmodal-submit" value="Login" ng-click="loginClicked()">
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="section section-primary">
+      <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-md-4">
+                <h1>LeoCloud</h1>
+            </div>
+            <div class="col-md-7 pull-right">
+                <a id="github-admin-link" href="https://github.com/leonardogcsoares/LeoCloud"><h4>
+                    https://github.com/leonardogcsoares/LeoCloud</h4></a>
+            </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Vendor Libs: jQuery only used for Bootstrap functionality -->
+    <script src="Scripts/angular.js"></script>
+    <script src="Scripts/angular-route.js"></script>
+    <script src="Scripts/jquery.min.js"></script>
+    <!-- UI Libs -->
+    <script src="Scripts/bootstrap.js"></script>
+    <script src="Scripts/bootstrap-slider.js"></script>
+    <script src="Scripts/angular-slider.js"></script>
+    <!-- App libs -->
+    <script src="app/app.js"></script>
+    <script src="app/controllers/controllers.js"></script>
+  
+
+</body></html>
