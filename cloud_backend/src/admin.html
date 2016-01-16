@@ -1,4 +1,4 @@
-<html><head>
+<html ng-app="loginApp"><head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--<link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css"
@@ -7,7 +7,7 @@
     <link href="Content/bootstrap-responsive.min.css" rel="stylesheet" type="text/css">
     <link href="Content/bootstrap-slider.min.css" rel="stylesheet" type="text/css">
     <link href="Content/admin.css" rel="stylesheet" type="text/css">
-  </head><body ng-app="loginApp" ng-controller="LoginController">
+  </head><body  ng-controller="LoginController">
     <div class="navbar navbar-default navbar-static-top">
       <div class="container">
         <div class="navbar-header">
@@ -46,15 +46,15 @@
                   </div>
                   <div class="col-sm-6">
                     <label class="radio-inline">
-                      <input type="radio" name="provedorRadio">AWS</label>
+                       <input type="radio" name="provedorRadio" ng-model="providerChoice" value="aws">AWS</label>
                     <label class="radio-inline">
-                      <input type="radio" name="provedorRadio">Google Cloud</label>
+                      <input type="radio" name="provedorRadio" ng-model="providerChoice" value="google">Google Cloud</label>
                     <label class="radio-inline">
-                      <input type="radio" name="provedorRadio">Microsoft</label>
+                      <input type="radio" name="provedorRadio" ng-model="providerChoice" value="azure">Microsoft</label>
                     <label class="radio-inline">
-                      <input type="radio" name="provedorRadio">HP</label>
+                      <input type="radio" name="provedorRadio" ng-model="providerChoice" value="hp">HP</label>
                     <label class="radio-inline">
-                      <input type="radio" name="provedorRadio">Other</label>
+                      <input type="radio" name="provedorRadio" ng-model="providerChoice" value="">Other</label>
                   </div>
                 </div>
                 <br>
@@ -63,7 +63,7 @@
                     <label for="inputNome" class="control-label">Nome</label>
                   </div>
                   <div class="col-sm-6">
-                    <input type="text" class="form-control" id="inputNome" placeholder="Nome">
+                    <input type="text" class="form-control" id="inputNome" placeholder="Nome" ng-model="providerName">
                   </div>
                 </div>
                 <br>
@@ -72,7 +72,7 @@
                     <label for="inputCpu" class="control-label">CPUs</label>
                   </div>
                   <div class="col-sm-6">
-                    <input type="text" class="form-control" id="inputCpu" placeholder="">
+                    <input type="text" class="form-control" id="inputCpu" placeholder="" ng-model="cpu">
                   </div>
                 </div>
                 <br>
@@ -81,7 +81,7 @@
                     <label for="inputRam" class="control-label">Ram (GB)</label>
                   </div>
                   <div class="col-sm-6">
-                    <input type="text" class="form-control" id="inputRam" placeholder="">
+                    <input type="text" class="form-control" id="inputRam" placeholder="" ng-model="ram">
                   </div>
                 </div>
                 <br>
@@ -90,7 +90,7 @@
                     <label for="inputDisco" class="control-label">Disco (GB)</label>
                   </div>
                   <div class="col-sm-6">
-                    <input type="text" class="form-control" id="inputDisco" placeholder="">
+                    <input type="text" class="form-control" id="inputDisco" placeholder="" ng-model="disco">
                   </div>
                 </div>
                 <br>
@@ -99,12 +99,12 @@
                     <label for="inputPrice" class="control-label">Preço (R$)</label>
                   </div>
                   <div class="col-sm-6">
-                    <input type="number" class="form-control" id="inputPrice" placeholder="">
+                    <input type="number" step="0.0000001" class="form-control" id="inputPrice" placeholder="" ng-model="price">
                   </div>
                 </div>
                 <div class="form-group">
                   <div class="col-sm-offset-2 col-sm-10">
-                    <button type="submit" class="btn btn-success">Cadastrar Novo</button>
+                    <button type="submit" class="btn btn-success" ng-click="registerProviderClicked()">Cadastrar Novo</button>
                   </div>
                 </div>
               </form>
@@ -156,6 +156,7 @@
     <!-- App libs -->
     <script src="app/app.js"></script>
     <script src="app/controllers/controllers.js"></script>
+    <script src="app/factories/factories.js"></script>
   
 
 </body></html>

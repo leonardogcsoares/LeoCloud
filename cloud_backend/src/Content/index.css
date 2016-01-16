@@ -6776,6 +6776,25 @@ body {
   background-attachment: fixed;
 }
 /* PINGENDO COMMENT DO NOT REMOVE */
+
+.slider-selection {
+    background: #DDF2D0;
+}
+
+li.media {
+    padding: 2%;
+    border-bottom: 1px solid #DDF2D0;
+    margin-top: 0px;
+}
+
+li.media:first-child {
+    border-top: 1px solid #DDF2D0;
+}
+
+li.media:hover {
+    background: #BFE5A8;
+}
+
 .github-footer {
   padding: auto 0;
 }

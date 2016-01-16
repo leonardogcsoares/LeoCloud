@@ -6883,3 +6883,7 @@ input[type=password]:hover {
 #github-admin-link:hover {
     color: #d43f3a;
 }
+
+#register-provider-form input {
+    height: 40px;
+}

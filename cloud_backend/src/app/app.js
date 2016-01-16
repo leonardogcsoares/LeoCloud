@@ -24,8 +24,11 @@ providersApp.config(function ($routeProvider, $interpolateProvider, $httpProvide
 
 var loginApp = angular.module('loginApp', ['ngRoute']);
 
-loginApp.config(function ($routeProvider, $interpolateProvider) {
+loginApp.config(function ($routeProvider, $interpolateProvider, $httpProvider) {
     $interpolateProvider.startSymbol('[[').endSymbol(']]');
+    $httpProvider.defaults.useXDomain = true;
+    delete $httpProvider.defaults.headers.common['X-Requested-With'];
+
 
     $routeProvider
         .when('/',
