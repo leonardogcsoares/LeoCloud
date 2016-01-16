@@ -11,23 +11,24 @@ providersApp.factory('providersFactory', function() {
         {providerName: 'az.large', provider: 'azure', cpu: 10, ram: 3, disco: 80, price: 2.43, link: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMwAAADMCAMAAAAI/LzAAAAASFBMVEX///9/ugDyUCIBpO//uQEAou/6xbv/5ba23vn/uwDyShIApvCBvADS5rbyUBj/5LP/9eMAqPDj8v396eXu9ePyQwDySwPzUhQHHnNYAAABE0lEQVR4nO3cOw7CQBBEQWDBgA02f+5/U6J1tEIiaBBSvQu0SpPPYiFJkj7s2oWqA8dQtwamu/eRHnVgGerYwvSrSGMdOMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMD8HNPXgZCljXmMkZ7zZTI1MZIkJduVMgQq5zqwDzW1MJuSqQ6sQ22/iBnmy8DAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwPwnpvwGkyn+3aT1quWyC1UHpm2k6dTASJKkt70AZTRlgloKum4AAAAASUVORK5CYII="}
     ];
 
-    factory.getProviders = function ($http) {
+    factory.getProviders = function ($scope, $http, callback) {
         var localProviders = [];
         $http({
             method: 'GET',
             url: 'http://localhost:8000/providers'
         }).then(function successCallback(response) {
-            localProviders = response.data;
-            for (var i=0; i<response.data.length; i++) {
-                localProviders.push(response.data[i])
-            }
-            console.log(localProviders);
+            console.log(response.data.length);
+
+            for(var prov in response.data)
+                localProviders.push(response.data[parseInt(prov)]);
+
+            callback(localProviders);
 
         }, function errorCallback(response){
-
+            callback(localProviders);
         });
 
-        return providers;
+
     };
 
     return factory;

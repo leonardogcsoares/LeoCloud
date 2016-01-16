@@ -7,8 +7,6 @@ var providersApp = angular.module('providersApp', ['ngRoute']);
 
 providersApp.config(function ($routeProvider, $interpolateProvider, $httpProvider){
     $interpolateProvider.startSymbol('[[').endSymbol(']]');
-    //$httpProvider.defaults.xsrfCookieName = 'csrftoken';
-    //$httpProvider.defaults.xsrfHeaderName = 'X-CSRFToken';
     $httpProvider.defaults.useXDomain = true;
     delete $httpProvider.defaults.headers.common['X-Requested-With'];
     //$resourceProvider.defaults.stripTrailingSlashes = false;

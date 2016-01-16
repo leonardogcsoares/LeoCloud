@@ -12,6 +12,19 @@ providersApp.controller('ProvidersController', function ($scope, $http, provider
     var discoSlider;
 
     function init() {
+        console.log("called");
+        providersFactory.getProviders($scope, $http, function (retrievedProviders) {
+            $scope.providers = retrievedProviders;
+
+
+            // Finish rest of linking images for each provider.
+            // Change links to local image files when possible.
+            for (var i=0; i<$scope.providers.length; i++){
+                if($scope.providers[i].provider === "aws")
+                    $scope.providers[i].link = "http://blog.concretesolutions.com.br/wp-content/uploads/2014/01/AWS-225x205.jpg";
+            }
+        });
+
         // Initializes the slider
         cpuSlider= $('#cpu').slider();
         ramSlider = $('#ram').slider();
@@ -59,7 +72,6 @@ providersApp.controller('ProvidersController', function ($scope, $http, provider
     };
 
     $scope.providerFilter = function(provider) {
-        console.log($scope.providerName);
         if($scope.providerName === "" || $scope.providerName === undefined)
             return true;
 
@@ -67,8 +79,6 @@ providersApp.controller('ProvidersController', function ($scope, $http, provider
         //return (provider.provider.isEqual($scope.providerName))
     }
 
-
-    $scope.providers = providersFactory.getProviders($http);
 
 
 
