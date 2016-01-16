@@ -2,7 +2,7 @@
  * Created by leonardogcsoares on 1/14/2016.
  */
 
-providersApp.controller('ProvidersController', function ($scope, providersFactory) {
+providersApp.controller('ProvidersController', function ($scope, $http, providersFactory) {
 
     //I like to have an init() for controllers that need to perform some initialization. Keeps things in
     //one place...not required though especially in the simple example below
@@ -68,7 +68,7 @@ providersApp.controller('ProvidersController', function ($scope, providersFactor
     }
 
 
-    $scope.providers = providersFactory.getProviders();
+    $scope.providers = providersFactory.getProviders($http);
 
 
 
