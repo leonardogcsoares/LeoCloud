@@ -62,9 +62,18 @@ loginApp.factory('providersPostFactory', function () {
     return factory;
 });
 
-loginApp.factory('Authentication',['$http', '$cookies' function() {
+loginApp.factory('Authentication',['$http', '$cookies', function() {
 
     var factory = {};
+
+    factory.Authentication = {
+        getAuthenticatedAccount: factory.getAuthenticatedAccount(),
+        isAuthenticated: factory.isAuthenticated(),
+        login: factory.loginUser(),
+        register: factory.registerUser(),
+        setAuthenticatedAccount: factory.setAuthenticatedAccount(),
+        unauthenticate: factory.unauthenticate()
+    }
 
     factory.registerUser = function(username, password, email) {
         //
@@ -80,5 +89,14 @@ loginApp.factory('Authentication',['$http', '$cookies' function() {
             email: email, password: password
         });
     };
+
+    factory.getAuthenticatedAccount = function(){
+        if (!$cookies.authenticatedAccount) {
+            return;
+        }
+        return JSON.parse($cookies.authenticatedAccount);
+    };
+
+
 
 }]);
