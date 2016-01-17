@@ -2,20 +2,39 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="49c8e7db-2f93-4e62-b67d-556099170a49" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Users\leonardogcsoares\WebstormProjects\venv\env\LeoCloud\.ebextensions\01-cloud_backend.config" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\leonardogcsoares\WebstormProjects\venv\env\LeoCloud\.elasticbeanstalk\config.yml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\leonardogcsoares\WebstormProjects\venv\env\LeoCloud\cloud_backend\test.py" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\leonardogcsoares\WebstormProjects\venv\env\LeoCloud\requirements.txt" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cloud_backend/src/app/controllers/controllers.js" afterPath="$PROJECT_DIR$/cloud_backend/src/app/controllers/controllers.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cloud_backend/src/app/factories/factories.js" afterPath="$PROJECT_DIR$/cloud_backend/src/app/factories/factories.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cloud_backend/users/models.py" afterPath="$PROJECT_DIR$/cloud_backend/users/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cloud_backend/users/permissions.py" afterPath="$PROJECT_DIR$/cloud_backend/users/permissions.py" />
+      <change type="DELETED" beforePath="C:\Users\leonardogcsoares\WebstormProjects\venv\env\LeoCloud\cloud_backend\src\Content\admin.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\leonardogcsoares\WebstormProjects\venv\env\LeoCloud\cloud_backend\src\Content\admin.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\leonardogcsoares\WebstormProjects\venv\env\LeoCloud\cloud_backend\src\Content\bootstrap-responsive.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\leonardogcsoares\WebstormProjects\venv\env\LeoCloud\cloud_backend\src\Content\bootstrap-responsive.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\leonardogcsoares\WebstormProjects\venv\env\LeoCloud\cloud_backend\src\Content\bootstrap-slider.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\leonardogcsoares\WebstormProjects\venv\env\LeoCloud\cloud_backend\src\Content\bootstrap-slider.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\leonardogcsoares\WebstormProjects\venv\env\LeoCloud\cloud_backend\src\Content\bootstrap.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\leonardogcsoares\WebstormProjects\venv\env\LeoCloud\cloud_backend\src\Content\bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\leonardogcsoares\WebstormProjects\venv\env\LeoCloud\cloud_backend\src\Content\images\github-icon.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\leonardogcsoares\WebstormProjects\venv\env\LeoCloud\cloud_backend\src\Content\index.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\leonardogcsoares\WebstormProjects\venv\env\LeoCloud\cloud_backend\src\Content\index.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\leonardogcsoares\WebstormProjects\venv\env\LeoCloud\cloud_backend\src\Scripts\angular-route.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\leonardogcsoares\WebstormProjects\venv\env\LeoCloud\cloud_backend\src\Scripts\angular-slider.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\leonardogcsoares\WebstormProjects\venv\env\LeoCloud\cloud_backend\src\Scripts\angular.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\leonardogcsoares\WebstormProjects\venv\env\LeoCloud\cloud_backend\src\Scripts\bootstrap-slider.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\leonardogcsoares\WebstormProjects\venv\env\LeoCloud\cloud_backend\src\Scripts\bootstrap-slider.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\leonardogcsoares\WebstormProjects\venv\env\LeoCloud\cloud_backend\src\Scripts\bootstrap.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\leonardogcsoares\WebstormProjects\venv\env\LeoCloud\cloud_backend\src\Scripts\bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\leonardogcsoares\WebstormProjects\venv\env\LeoCloud\cloud_backend\src\Scripts\jquery.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\leonardogcsoares\WebstormProjects\venv\env\LeoCloud\cloud_backend\src\admin.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\leonardogcsoares\WebstormProjects\venv\env\LeoCloud\cloud_backend\src\app\app.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\leonardogcsoares\WebstormProjects\venv\env\LeoCloud\cloud_backend\src\app\controllers\controllers.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\leonardogcsoares\WebstormProjects\venv\env\LeoCloud\cloud_backend\src\app\factories\factories.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\leonardogcsoares\WebstormProjects\venv\env\LeoCloud\cloud_backend\src\app\partials\providers.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\leonardogcsoares\WebstormProjects\venv\env\LeoCloud\cloud_backend\src\index.html" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cloud_backend/db.sqlite3" afterPath="$PROJECT_DIR$/cloud_backend/db.sqlite3" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cloud_backend/.ebextensions/01-cloud_backend.config" afterPath="$PROJECT_DIR$/cloud_backend/.ebextensions/01-cloud_backend.config" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cloud_backend/users/serializers.py" afterPath="$PROJECT_DIR$/cloud_backend/users/serializers.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cloud_backend/cloud_backend/settings.py" afterPath="$PROJECT_DIR$/cloud_backend/cloud_backend/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cloud_backend/cloud_backend/urls.py" afterPath="$PROJECT_DIR$/cloud_backend/cloud_backend/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cloud_backend/users/urls.py" afterPath="$PROJECT_DIR$/cloud_backend/users/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cloud_backend/providers/views.py" afterPath="$PROJECT_DIR$/cloud_backend/providers/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cloud_backend/users/views.py" afterPath="$PROJECT_DIR$/cloud_backend/users/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cloud_backend/cloud_backend/wsgi.py" afterPath="$PROJECT_DIR$/cloud_backend/cloud_backend/wsgi.py" />
     </list>
     <ignored path="LeoCloud.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,96 +57,48 @@
     <favorites_list name="LeoCloud" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.85045516">
-      <split-first>
-        <leaf>
-          <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/cloud_backend/src/app/app.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="782">
-                  <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="controllers.js" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/cloud_backend/src/app/controllers/controllers.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.37883008" vertical-offset="1632" max-vertical-offset="2839">
-                  <caret line="112" column="57" selection-start-line="112" selection-start-column="57" selection-end-line="112" selection-end-column="57" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="factories.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/cloud_backend/src/app/factories/factories.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="846" max-vertical-offset="1564">
-                  <caret line="82" column="35" selection-start-line="82" selection-start-column="35" selection-end-line="82" selection-end-column="35" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/cloud_backend/src/Content/index.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="115070" max-vertical-offset="115838">
-                  <caret line="6785" column="28" selection-start-line="6785" selection-start-column="28" selection-end-line="6785" selection-end-column="28" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/cloud_backend/src/index.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-18.115385" vertical-offset="1977" max-vertical-offset="2822">
-                  <caret line="144" column="10" selection-start-line="144" selection-start-column="10" selection-end-line="144" selection-end-column="10" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="admin.css" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/cloud_backend/src/Content/admin.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="116429" max-vertical-offset="117198">
-                  <caret line="6887" column="13" selection-start-line="6887" selection-start-column="13" selection-end-line="6887" selection-end-column="13" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="admin.html" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/cloud_backend/src/admin.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.8352601" vertical-offset="289" max-vertical-offset="2839">
-                  <caret line="51" column="48" selection-start-line="51" selection-start-column="48" selection-end-line="51" selection-end-column="48" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="factories.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/cloud_backend/src/app/factories/factories.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="1564">
-                  <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf>
+      <file leaf-file-name="admin.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/cloud_backend/static/admin.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-2.4393063" vertical-offset="2147" max-vertical-offset="2839">
+              <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="controllers.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cloud_backend/static/app/controllers/controllers.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="1662" max-vertical-offset="2856">
+              <caret line="110" column="21" selection-start-line="110" selection-start-column="21" selection-end-line="110" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="factories.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cloud_backend/static/app/factories/factories.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="846" max-vertical-offset="1598">
+              <caret line="86" column="19" selection-start-line="86" selection-start-column="19" selection-end-line="86" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cloud_backend/static/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="39.254547" vertical-offset="2159" max-vertical-offset="2822">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -152,6 +123,10 @@
         <option value="$PROJECT_DIR$/cloud_backend/src/admin.html" />
         <option value="$PROJECT_DIR$/cloud_backend/src/app/controllers/controllers.js" />
         <option value="$PROJECT_DIR$/cloud_backend/src/app/factories/factories.js" />
+        <option value="$PROJECT_DIR$/cloud_backend/static/index.html" />
+        <option value="$PROJECT_DIR$/cloud_backend/static/admin.html" />
+        <option value="$PROJECT_DIR$/cloud_backend/static/app/factories/factories.js" />
+        <option value="$PROJECT_DIR$/cloud_backend/static/app/controllers/controllers.js" />
       </list>
     </option>
   </component>
@@ -234,7 +209,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
+              <option name="myItemId" value="static" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -252,55 +227,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Content" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LeoCloud" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LeoCloud" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cloud_backend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Content" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LeoCloud" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LeoCloud" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cloud_backend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
+              <option name="myItemId" value="static" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -322,7 +249,33 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="partials" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LeoCloud" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LeoCloud" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cloud_backend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -348,7 +301,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
+              <option name="myItemId" value="static" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -386,20 +339,10 @@
       <recent name="C:\Users\leonardogcsoares\WebstormProjects\LeoCloud\Scripts" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.index.html">
+  <component name="RunManager" selected="JavaScript Debug.index.html (2)">
     <configuration default="false" name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/LeoCloud/index.html">
       <RunnerSettings RunnerId="JavascriptDebugRunner" />
       <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="admin.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/LeoCloud/admin.html">
-      <RunnerSettings RunnerId="JavascriptDebugRunner" />
-      <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="factories.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="C:/Program Files (x86)/nodejs/node" path-to-js-file="factories.js" working-dir="$PROJECT_DIR$/app/factories">
-      <RunnerSettings RunnerId="Basic" />
-      <ConfigurationWrapper RunnerId="Basic" />
       <method />
     </configuration>
     <configuration default="false" name="index.html (1)" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/LeoCloud/cloud_backend/src/index.html">
@@ -408,6 +351,16 @@
       <method />
     </configuration>
     <configuration default="false" name="admin.html (1)" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/LeoCloud/cloud_backend/src/admin.html">
+      <RunnerSettings RunnerId="JavascriptDebugRunner" />
+      <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="admin.html (2)" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/LeoCloud/cloud_backend/src/admin.html">
+      <RunnerSettings RunnerId="JavascriptDebugRunner" />
+      <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="index.html (2)" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/LeoCloud/cloud_backend/src/index.html">
       <RunnerSettings RunnerId="JavascriptDebugRunner" />
       <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
       <method />
@@ -452,18 +405,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
-      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.admin.html" />
-      <item index="2" class="java.lang.String" itemvalue="Node.js.factories.js" />
-      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.index.html (1)" />
-      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.admin.html (1)" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.index.html (1)" />
+      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.admin.html (1)" />
+      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.admin.html (2)" />
+      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.index.html (2)" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.admin.html (1)" />
-        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.index.html (1)" />
-        <item index="3" class="java.lang.String" itemvalue="Node.js.factories.js" />
-        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.admin.html" />
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.html (2)" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.admin.html (2)" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.admin.html (1)" />
+        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.index.html (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -528,7 +481,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298647" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.4994797" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40206185" sideWeight="0.4994797" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1913815" sideWeight="0.4994797" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39973614" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3372859" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5005203" order="2" side_tool="true" content_ui="tabs" />
@@ -592,170 +545,34 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/cloud_backend/src/app/app.js">
+    <entry file="file://$PROJECT_DIR$/cloud_backend/static/app/factories/factories.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="425" max-vertical-offset="782">
-          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="846" max-vertical-offset="1598">
+          <caret line="86" column="19" selection-start-line="86" selection-start-column="19" selection-end-line="86" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cloud_backend/src/app/controllers/controllers.js">
+    <entry file="file://$PROJECT_DIR$/cloud_backend/static/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1985" max-vertical-offset="2771">
-          <caret line="147" column="15" selection-start-line="147" selection-start-column="15" selection-end-line="147" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud_backend/src/Content/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="115070" max-vertical-offset="115838">
-          <caret line="6785" column="28" selection-start-line="6785" selection-start-column="28" selection-end-line="6785" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud_backend/src/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1977" max-vertical-offset="2822">
-          <caret line="124" column="40" selection-start-line="124" selection-start-column="40" selection-end-line="124" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud_backend/src/Content/admin.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="116429" max-vertical-offset="117198">
-          <caret line="6887" column="13" selection-start-line="6887" selection-start-column="13" selection-end-line="6887" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud_backend/src/admin.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2839">
+        <state vertical-scroll-proportion="39.254547" vertical-offset="2159" max-vertical-offset="2822">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cloud_backend/src/app/factories/factories.js">
+    <entry file="file://$PROJECT_DIR$/cloud_backend/static/app/controllers/controllers.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="561" max-vertical-offset="1122">
-          <caret line="33" column="19" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1662" max-vertical-offset="2856">
+          <caret line="110" column="21" selection-start-line="110" selection-start-column="21" selection-end-line="110" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cloud_backend/src/app/app.js">
+    <entry file="file://$PROJECT_DIR$/cloud_backend/static/admin.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="425" max-vertical-offset="782">
-          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud_backend/src/app/controllers/controllers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1985" max-vertical-offset="2771">
-          <caret line="145" column="55" selection-start-line="145" selection-start-column="55" selection-end-line="145" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud_backend/src/Content/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="115070" max-vertical-offset="115838">
-          <caret line="6785" column="28" selection-start-line="6785" selection-start-column="28" selection-end-line="6785" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud_backend/src/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1977" max-vertical-offset="2822">
-          <caret line="157" column="0" selection-start-line="157" selection-start-column="0" selection-end-line="157" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud_backend/src/Content/admin.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="116429" max-vertical-offset="117198">
-          <caret line="6887" column="13" selection-start-line="6887" selection-start-column="13" selection-end-line="6887" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud_backend/src/admin.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2839">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud_backend/src/app/factories/factories.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="561" max-vertical-offset="1122">
-          <caret line="33" column="19" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud_backend/src/Content/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="115070" max-vertical-offset="115838">
-          <caret line="6785" column="28" selection-start-line="6785" selection-start-column="28" selection-end-line="6785" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud_backend/src/Content/admin.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="116429" max-vertical-offset="117198">
-          <caret line="6887" column="13" selection-start-line="6887" selection-start-column="13" selection-end-line="6887" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud_backend/src/admin.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8352601" vertical-offset="289" max-vertical-offset="2839">
-          <caret line="51" column="48" selection-start-line="51" selection-start-column="48" selection-end-line="51" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud_backend/src/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.115385" vertical-offset="1977" max-vertical-offset="2822">
-          <caret line="144" column="10" selection-start-line="144" selection-start-column="10" selection-end-line="144" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud_backend/src/app/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="782">
-          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud_backend/src/app/factories/factories.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="846" max-vertical-offset="1564">
-          <caret line="82" column="35" selection-start-line="82" selection-start-column="35" selection-end-line="82" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud_backend/src/app/controllers/controllers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37883008" vertical-offset="1632" max-vertical-offset="2839">
-          <caret line="112" column="57" selection-start-line="112" selection-start-column="57" selection-end-line="112" selection-end-column="57" />
+        <state vertical-scroll-proportion="-2.4393063" vertical-offset="2147" max-vertical-offset="2839">
+          <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
           <folding />
         </state>
       </provider>

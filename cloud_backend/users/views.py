@@ -6,21 +6,27 @@ from users.models import Users
 from users.serializers import UsersSerializer
 
 
-@api_view(['POST'])
+@api_view(['GET', 'POST'])
 def users_post(request):
     """
     Create a new user.
     """
 
-    request.method == 'POST':
-    serializer = UsersSerializer(data=request.data)
-    if serializer.is_valid():
-        serializer.save()
-        return Response(serializer.data, status=status.HTTP_201_CREATED)
-    return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+    if request.method == 'GET':
+        users = Users.objects.all()
+        serializer = UsersSerializer(users, many=True)
+        return Response(serializer.data)
+
+    elif request.method == 'POST':
+        serializer = UsersSerializer(data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data, status=status.HTTP_201_CREATED)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
 
 @api_view(['GET', 'DELETE'])
-def users_detail(request, pk):
+def user_detail(request, pk):
     """
     Retrieve a user instance.
     """

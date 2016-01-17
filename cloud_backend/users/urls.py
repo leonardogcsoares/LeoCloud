@@ -1,10 +1,6 @@
 from django.conf.urls import url
 from users import views
 
-from authentication.views import AccountViewSet
-
-
-
 urlpatterns = [
 
 	url(r'^users/$', views.users_post),

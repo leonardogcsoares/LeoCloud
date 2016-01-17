@@ -2,7 +2,7 @@
  * Created by leonardogcsoares on 1/15/2016.
  */
 
-var apiEndPointPrefix = 'http://localhost:8000';
+var apiEndPointPrefix = 'http://leo-cloud.elasticbeanstalk.com/';
 
 providersApp.factory('providersGetFactory', function() {
     var factory = {};
@@ -19,7 +19,7 @@ providersApp.factory('providersGetFactory', function() {
         var localProviders = [];
         $http({
             method: 'GET',
-            url:apiEndPointPrefix + '/providers/'
+            url: '/providers/'
         }).then(function successCallback(response) {
             console.log(response.data.length);
 
@@ -46,7 +46,7 @@ loginApp.factory('providersPostFactory', function () {
 
         $http ({
             method: 'POST',
-            url: apiEndPointPrefix + '/providers/',
+            url: '/providers/',
             data: JSON.stringify(data),
             headers: { 'Content-Type': 'application/json'}
         }).then(function successCallback(response) {
@@ -70,7 +70,7 @@ loginApp.factory('loginFactory', function () {
         var localProviders = [];
         $http({
             method: 'GET',
-            url:apiEndPointPrefix + '/users/'
+            url: '/users/'
         }).then(function successCallback(response) {
             //console.log(response.data.length);
 
@@ -83,5 +83,7 @@ loginApp.factory('loginFactory', function () {
             callback(localProviders);
         });
     };
+
+    return factory;
 
 });

@@ -95,7 +95,7 @@ providersApp.controller('ProvidersController', function ($scope, $http, provider
 });
 
 
-loginApp.controller('LoginController', function ($scope, $http, providersPostFactory) {
+loginApp.controller('LoginController', function ($scope, $http, providersPostFactory, loginFactory) {
 
 
     // Login try
@@ -107,7 +107,8 @@ loginApp.controller('LoginController', function ($scope, $http, providersPostFac
         loginFactory.getUserCredentials($scope, $http, function (user) {
             console.log(user);
 
-            if (response.status == 200) {
+
+            if (false) {
                 /// / If login successful close modal and open register
                 $('#register-provider-form').removeClass('hide');
                 $('#login-modal-admin').addClass('hide');

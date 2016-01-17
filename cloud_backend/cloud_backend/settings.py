@@ -74,6 +74,7 @@ TEMPLATES = [
                 'django.contrib.messages.context_processors.messages',
             ],
         },
+        'DIRS':  os.path.join(os.path.dirname(__file__) , '../static').replace('\\','/')
     },
 ]
 
@@ -89,9 +90,6 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
-
-# User model
-AUTH_USER_MODEL = 'users.Account'
 
 
 # Password validation
@@ -140,3 +138,14 @@ CORS_ORIGIN_WHITELIST = (
     'http://leocloud.elasticbeanstalk.com/',
 
 )
+
+
+# Allows posting through the URL link. Workaround for simple solution. Would have done it diferently.
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework.authentication.TokenAuthentication',
+    ),
+   'DEFAULT_PERMISSION_CLASSES': (
+        'rest_framework.permissions.AllowAny',
+    ),
+}
