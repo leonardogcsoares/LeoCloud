@@ -106,9 +106,13 @@ loginApp.controller('LoginController', function ($scope, $http, providersPostFac
 
         loginFactory.getUserCredentials($scope, $http, function (user) {
             console.log(user);
+            console.log(JSON.stringify(user));
+            console.log(JSON.stringify(user) !== "[]");
 
+            if (JSON.stringify(user) !== "[]") {
 
-            if (false) {
+                if($scope.adminUsername === user['0'].username &&
+                    $scope.adminPassword === user['0'].password )
                 /// / If login successful close modal and open register
                 $('#register-provider-form').removeClass('hide');
                 $('#login-modal-admin').addClass('hide');
