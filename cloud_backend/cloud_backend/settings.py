@@ -27,6 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     'http://localhost:8000/',
+    'http://leocloud.elasticbeanstalk.com/',
 ]
 
 
@@ -41,6 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'providers',
+    'users',
     'corsheaders',
 ]
 
@@ -88,6 +90,9 @@ DATABASES = {
     }
 }
 
+# User model
+AUTH_USER_MODEL = 'users.Account'
+
 
 # Password validation
 # https://docs.djangoproject.com/en/1.9/ref/settings/#auth-password-validators
@@ -113,7 +118,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'US/Pacific'
 
 USE_I18N = True
 
@@ -131,5 +136,7 @@ STATIC_URL = '/static/'
 # CORS Hosts Allowed
 
 CORS_ORIGIN_WHITELIST = (
-    'http://localhost:63342/'
+    'http://localhost:63342/',
+    'http://leocloud.elasticbeanstalk.com/',
+
 )

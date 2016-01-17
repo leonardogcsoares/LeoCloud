@@ -2,6 +2,8 @@
  * Created by leonardogcsoares on 1/15/2016.
  */
 
+var providersApiEndPoint = 'http://localhost:8000';
+
 providersApp.factory('providersGetFactory', function() {
     var factory = {};
     //var providers = [
@@ -11,13 +13,13 @@ providersApp.factory('providersGetFactory', function() {
     //    {providerName: 'az.large', provider: 'azure', cpu: 10, ram: 3, disco: 80, price: 2.43, link: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMwAAADMCAMAAAAI/LzAAAAASFBMVEX///9/ugDyUCIBpO//uQEAou/6xbv/5ba23vn/uwDyShIApvCBvADS5rbyUBj/5LP/9eMAqPDj8v396eXu9ePyQwDySwPzUhQHHnNYAAABE0lEQVR4nO3cOw7CQBBEQWDBgA02f+5/U6J1tEIiaBBSvQu0SpPPYiFJkj7s2oWqA8dQtwamu/eRHnVgGerYwvSrSGMdOMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMD8HNPXgZCljXmMkZ7zZTI1MZIkJduVMgQq5zqwDzW1MJuSqQ6sQ22/iBnmy8DAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwPwnpvwGkyn+3aT1quWyC1UHpm2k6dTASJKkt70AZTRlgloKum4AAAAASUVORK5CYII="}
     //];
 
-    var providersApiEndPoint = 'http://localhost:8000/providers/';
+
 
     factory.getProvidersFromDb = function ($scope, $http, callback) {
         var localProviders = [];
         $http({
             method: 'GET',
-            url:providersApiEndPoint
+            url:providersApiEndPoint + '/providers/'
         }).then(function successCallback(response) {
             console.log(response.data.length);
 
@@ -37,14 +39,14 @@ providersApp.factory('providersGetFactory', function() {
 
 loginApp.factory('providersPostFactory', function () {
     var factory = {};
-    var providersApiEndPoint = 'http://localhost:8000/providers/';
+
 
     factory.postProviderToDb = function($http, data, callback) {
         console.log(JSON.stringify(data));
 
         $http ({
             method: 'POST',
-            url: providersApiEndPoint,
+            url: providersApiEndPoint + '/providers/',
             data: JSON.stringify(data),
             headers: { 'Content-Type': 'application/json'}
         }).then(function successCallback(response) {
@@ -59,3 +61,24 @@ loginApp.factory('providersPostFactory', function () {
 
     return factory;
 });
+
+loginApp.factory('Authentication',['$http', '$cookies' function() {
+
+    var factory = {};
+
+    factory.registerUser = function(username, password, email) {
+        //
+        return $http.post(providersApiEndPoint + '/api/v1/accounts/', {
+            username: username,
+            password: password,
+            email: email
+        });
+    };
+
+    factory.loginUser = function(email, password) {
+        return $http.post('/api/v1/auth/login/', {
+            email: email, password: password
+        });
+    };
+
+}]);

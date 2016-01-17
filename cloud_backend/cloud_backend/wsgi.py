@@ -8,9 +8,12 @@ https://docs.djangoproject.com/en/1.9/howto/deployment/wsgi/
 """
 
 import os
+import sys
+
+sys.path.insert(0, '/opt/python/current/app/cloud_backend')
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "cloud_backend.settings")
+os.environ['DJANGO_SETTINGS_MODULE'] = 'cloud_backend.settings'
 
 application = get_wsgi_application()

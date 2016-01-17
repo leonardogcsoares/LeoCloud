@@ -119,13 +119,6 @@ loginApp.controller('LoginController', function ($scope, $http, providersPostFac
                 $scope.isEmptyOrUndefined($scope.disco) ||
                 $scope.isEmptyOrUndefined($scope.price)
             ) {
-            console.log("Don't add new provider");
-            console.log($scope.providerChoice);
-            console.log($scope.providerName);
-            console.log($scope.cpu);
-            console.log($scope.ram);
-            console.log($scope.disco);
-            console.log($scope.price);
         }
 
         else {
@@ -138,7 +131,20 @@ loginApp.controller('LoginController', function ($scope, $http, providersPostFac
             newObject.price = $scope.price;
 
             providersPostFactory.postProviderToDb($http, newObject, function (response) {
-               console.log(response);
+                console.log(response);
+
+                // HTTP status created
+                if(response.status === 201) {
+                    // Clears the form for further input
+                    $scope.providerChoice = "";
+                    $scope.providerName = "";
+                    $scope.cpu = "";
+                    $scope.ram = "";
+                    $scope.disco = "";
+                    $scope.price = "";
+
+                    // Show "Success" feedback snackbar
+                }
             });
         }
     };
