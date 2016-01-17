@@ -97,6 +97,13 @@ providersApp.controller('ProvidersController', function ($scope, $http, provider
 
 loginApp.controller('LoginController', function ($scope, $http, providersPostFactory, loginFactory) {
 
+    var snackbarOptions = {
+        content: "Some text", // text of the snackbar
+        style: "toast", // add a custom class to your snackbar
+        timeout: 3000, // time in milliseconds after the snackbar autohides, 0 is disabled
+        htmlAllowed: true, // allows HTML as content value
+        onClose: function(){ } // callback called when the snackbar gets closed.
+    };
 
     // Login try
     $scope.loginClicked = function() {
@@ -112,10 +119,18 @@ loginApp.controller('LoginController', function ($scope, $http, providersPostFac
             if (JSON.stringify(user) !== "[]") {
 
                 if($scope.adminUsername === user['0'].username &&
-                    $scope.adminPassword === user['0'].password )
-                /// / If login successful close modal and open register
-                $('#register-provider-form').removeClass('hide');
-                $('#login-modal-admin').addClass('hide');
+                    $scope.adminPassword === user['0'].password ) {
+                    /// / If login successful close modal and open register
+                    $('#register-provider-form').removeClass('hide');
+                    $('#login-modal-admin').addClass('hide');
+                    snackbarOptions.content = "Login Successful";
+                    $.snackbar(snackbarOptions).show();
+                }
+
+                else {
+                    snackbarOptions.content = "Login Failed";
+                    $.snackbar(snackbarOptions).show();
+                }
             }
         })
     };
@@ -153,6 +168,15 @@ loginApp.controller('LoginController', function ($scope, $http, providersPostFac
                     $scope.price = "";
 
                     // Show "Success" feedback snackbar
+                    snackbarOptions.content = "Added Provider to DB"
+                    $.snackbar(snackbarOptions).show();
+                }
+
+                else {
+                    // Show "Failed" feedback snackbar
+                    snackbarOptions.content = "Failed adding content to DB";
+                    $.snackbar(snackbarOptions).show();
+
                 }
             });
         }
