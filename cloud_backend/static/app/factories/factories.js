@@ -40,7 +40,6 @@ providersApp.factory('providersGetFactory', function() {
 loginApp.factory('providersPostFactory', function () {
     var factory = {};
 
-
     factory.postProviderToDb = function($http, data, callback) {
         console.log(JSON.stringify(data));
 
@@ -58,6 +57,8 @@ loginApp.factory('providersPostFactory', function () {
         });
 
     };
+
+
 
     return factory;
 });

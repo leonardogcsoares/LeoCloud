@@ -108,9 +108,6 @@ loginApp.controller('LoginController', function ($scope, $http, providersPostFac
     // Login try
     $scope.loginClicked = function() {
 
-
-
-
         loginFactory.getUserCredentials($scope, $http, function (user) {
             console.log(user);
             console.log(JSON.stringify(user));

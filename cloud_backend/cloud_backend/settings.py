@@ -84,12 +84,25 @@ WSGI_APPLICATION = 'cloud_backend.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.9/ref/settings/#databases
 
+# Local Database db.sqlite3
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': 'leoclouddb',
+#         'USER': 'leonardogcsoares',
+#         'PASSWORD': 'leo-42551625',
+#         'HOST': 'leocloud-db.cwpfjsxxdghm.us-west-2.rds.amazonaws.com',
+#         'PORT': '3306',
+#     }
+# }
+
 
 
 # Password validation
