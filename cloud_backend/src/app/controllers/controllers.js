@@ -102,13 +102,17 @@ loginApp.controller('LoginController', function ($scope, $http, providersPostFac
     $scope.loginClicked = function() {
 
 
-        /// / If login successful close modal and open register
-        $('#register-provider-form').removeClass('hide');
-        $('#login-modal-admin').addClass('hide');
 
-        // Read username and password from Login Modal
-        //console.log($scope.adminUsername);
-        //console.log($scope.adminPassword);
+
+        loginFactory.getUserCredentials($scope, $http, function (user) {
+            console.log(user);
+
+            if (response.status == 200) {
+                /// / If login successful close modal and open register
+                $('#register-provider-form').removeClass('hide');
+                $('#login-modal-admin').addClass('hide');
+            }
+        })
     };
 
     $scope.registerProviderClicked = function() {

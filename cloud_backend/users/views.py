@@ -1,68 +1,38 @@
-from rest_framework import permissions, viewsets
-
-from users.models import Account
-from users.permissions import IsAccountOwner
-from users.serializers import AccountSerializer
-
-import json
-
-from django.contrib.auth import authenticate, login
-
-from rest_framework import status, views
+from rest_framework import status
+from rest_framework.decorators import api_view
 from rest_framework.response import Response
+from rest_framework.reverse import reverse
+from users.models import Users
+from users.serializers import UsersSerializer
 
 
-class AccountViewSet(viewsets.ModelViewSet):
-    lookup_field = 'username'
-    queryset = Account.objects.all()
-    serializer_class = AccountSerializer
+@api_view(['POST'])
+def users_post(request):
+    """
+    Create a new user.
+    """
 
-    def get_permissions(self):
-        if self.request.method in permissions.SAFE_METHODS:
-            return (permissions.AllowAny(),)
+    request.method == 'POST':
+    serializer = UsersSerializer(data=request.data)
+    if serializer.is_valid():
+        serializer.save()
+        return Response(serializer.data, status=status.HTTP_201_CREATED)
+    return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
-        if self.request.method == 'POST':
-            return (permissions.AllowAny(),)
+@api_view(['GET', 'DELETE'])
+def users_detail(request, pk):
+    """
+    Retrieve a user instance.
+    """
+    try:
+        user = Users.objects.get(pk=pk)
+    except Users.DoesNotExist:
+        return Response(status=status.HTTP_404_NOT_FOUND)
 
-        return (permissions.IsAuthenticated(), IsAccountOwner(),)
+    if request.method == 'GET':
+        serializer = UsersSerializer(user)
+        return Response(serializer.data)
 
-    def create(self, request):
-        serializer = self.serializer_class(data=request.data)
-
-        if serializer.is_valid():
-            Account.objects.create_user(**serializer.validated_data)
-
-            return Response(serializer.validated_data, status=status.HTTP_201_CREATED)
-
-        return Response({
-            'status': 'Bad request',
-            'message': 'Account could not be created with received data.'
-        }, status=status.HTTP_400_BAD_REQUEST)
-
-
-class LoginView(views.APIView):
-    def post(self, request, format=None):
-        data = json.loads(request.body)
-
-        email = data.get('email', None)
-        password = data.get('password', None)
-
-        account = authenticate(email=email, password=password)
-
-        if account is not None:
-            if account.is_active:
-                login(request, account)
-
-                serialized = AccountSerializer(account)
-
-                return Response(serialized.data)
-            else:
-                return Response({
-                    'status': 'Unauthorized',
-                    'message': 'This account has been disabled.'
-                }, status=status.HTTP_401_UNAUTHORIZED)
-        else:
-            return Response({
-                'status': 'Unauthorized',
-                'message': 'Username/password combination invalid.'
-            }, status=status.HTTP_401_UNAUTHORIZED)
+    elif request.method == 'DELETE':
+        user.delete()
+        return Response(status=status.HTTP_204_NO_CONTENT)

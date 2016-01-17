@@ -2,7 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="49c8e7db-2f93-4e62-b67d-556099170a49" name="Default" comment="">
+      <change type="DELETED" beforePath="C:\Users\leonardogcsoares\WebstormProjects\venv\env\LeoCloud\.ebextensions\01-cloud_backend.config" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\leonardogcsoares\WebstormProjects\venv\env\LeoCloud\.elasticbeanstalk\config.yml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\leonardogcsoares\WebstormProjects\venv\env\LeoCloud\cloud_backend\test.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\leonardogcsoares\WebstormProjects\venv\env\LeoCloud\requirements.txt" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cloud_backend/src/app/controllers/controllers.js" afterPath="$PROJECT_DIR$/cloud_backend/src/app/controllers/controllers.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cloud_backend/src/app/factories/factories.js" afterPath="$PROJECT_DIR$/cloud_backend/src/app/factories/factories.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cloud_backend/users/models.py" afterPath="$PROJECT_DIR$/cloud_backend/users/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cloud_backend/users/permissions.py" afterPath="$PROJECT_DIR$/cloud_backend/users/permissions.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cloud_backend/users/serializers.py" afterPath="$PROJECT_DIR$/cloud_backend/users/serializers.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cloud_backend/users/urls.py" afterPath="$PROJECT_DIR$/cloud_backend/users/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cloud_backend/providers/views.py" afterPath="$PROJECT_DIR$/cloud_backend/providers/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cloud_backend/users/views.py" afterPath="$PROJECT_DIR$/cloud_backend/users/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cloud_backend/cloud_backend/wsgi.py" afterPath="$PROJECT_DIR$/cloud_backend/cloud_backend/wsgi.py" />
     </list>
     <ignored path="LeoCloud.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,28 +44,28 @@
           <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/cloud_backend/src/app/app.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="425" max-vertical-offset="782">
+                <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="782">
                   <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="controllers.js" pinned="false" current-in-tab="false">
+          <file leaf-file-name="controllers.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/cloud_backend/src/app/controllers/controllers.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="1849" max-vertical-offset="2771">
-                  <caret line="147" column="15" selection-start-line="147" selection-start-column="15" selection-end-line="147" selection-end-column="15" />
+                <state vertical-scroll-proportion="0.37883008" vertical-offset="1632" max-vertical-offset="2839">
+                  <caret line="112" column="57" selection-start-line="112" selection-start-column="57" selection-end-line="112" selection-end-column="57" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="factories.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="factories.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/cloud_backend/src/app/factories/factories.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.3526093" vertical-offset="1059" max-vertical-offset="1819">
-                  <caret line="77" column="33" selection-start-line="77" selection-start-column="33" selection-end-line="77" selection-end-column="33" />
+                <state vertical-scroll-proportion="0.0" vertical-offset="846" max-vertical-offset="1564">
+                  <caret line="82" column="35" selection-start-line="82" selection-start-column="35" selection-end-line="82" selection-end-column="35" />
                   <folding />
                 </state>
               </provider>
@@ -95,7 +108,7 @@
           <file leaf-file-name="admin.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/cloud_backend/src/admin.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.84626645" vertical-offset="289" max-vertical-offset="2839">
+                <state vertical-scroll-proportion="0.8352601" vertical-offset="289" max-vertical-offset="2839">
                   <caret line="51" column="48" selection-start-line="51" selection-start-column="48" selection-end-line="51" selection-end-column="48" />
                   <folding />
                 </state>
@@ -105,7 +118,7 @@
           <file leaf-file-name="factories.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/cloud_backend/src/app/factories/factories.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="1819">
+                <state vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="1564">
                   <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
                   <folding />
                 </state>
@@ -146,9 +159,10 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="793" />
-    <option name="width" value="814" />
-    <option name="height" value="907" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1616" />
+    <option name="height" value="916" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -506,7 +520,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="793" y="0" width="814" height="907" extended-state="0" />
+    <frame x="-8" y="-8" width="1616" height="916" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298647" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -708,16 +722,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cloud_backend/src/admin.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.84626645" vertical-offset="289" max-vertical-offset="2839">
+        <state vertical-scroll-proportion="0.8352601" vertical-offset="289" max-vertical-offset="2839">
           <caret line="51" column="48" selection-start-line="51" selection-start-column="48" selection-end-line="51" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud_backend/src/app/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="782">
-          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -730,18 +736,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cloud_backend/src/app/controllers/controllers.js">
+    <entry file="file://$PROJECT_DIR$/cloud_backend/src/app/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1849" max-vertical-offset="2771">
-          <caret line="147" column="15" selection-start-line="147" selection-start-column="15" selection-end-line="147" selection-end-column="15" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="782">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cloud_backend/src/app/factories/factories.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3526093" vertical-offset="1059" max-vertical-offset="1819">
-          <caret line="77" column="33" selection-start-line="77" selection-start-column="33" selection-end-line="77" selection-end-column="33" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="846" max-vertical-offset="1564">
+          <caret line="82" column="35" selection-start-line="82" selection-start-column="35" selection-end-line="82" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud_backend/src/app/controllers/controllers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.37883008" vertical-offset="1632" max-vertical-offset="2839">
+          <caret line="112" column="57" selection-start-line="112" selection-start-column="57" selection-end-line="112" selection-end-column="57" />
           <folding />
         </state>
       </provider>

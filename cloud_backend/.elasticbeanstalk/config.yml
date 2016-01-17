@@ -1,11 +1,10 @@
 branch-defaults:
-  master:
-    environment: leocloud
-    group_suffix: null
+  default:
+    environment: LeoCloud3-dev
 global:
-  application_name: LeoCloud2
+  application_name: LeoCloud3
   default_ec2_keyname: leocloud
   default_platform: Python 2.7
   default_region: us-west-2
   profile: eb-cli
-  sc: git
+  sc: null

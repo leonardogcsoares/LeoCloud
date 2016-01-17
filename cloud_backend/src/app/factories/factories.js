@@ -2,7 +2,7 @@
  * Created by leonardogcsoares on 1/15/2016.
  */
 
-var providersApiEndPoint = 'http://localhost:8000';
+var apiEndPointPrefix = 'http://localhost:8000';
 
 providersApp.factory('providersGetFactory', function() {
     var factory = {};
@@ -19,7 +19,7 @@ providersApp.factory('providersGetFactory', function() {
         var localProviders = [];
         $http({
             method: 'GET',
-            url:providersApiEndPoint + '/providers/'
+            url:apiEndPointPrefix + '/providers/'
         }).then(function successCallback(response) {
             console.log(response.data.length);
 
@@ -46,7 +46,7 @@ loginApp.factory('providersPostFactory', function () {
 
         $http ({
             method: 'POST',
-            url: providersApiEndPoint + '/providers/',
+            url: apiEndPointPrefix + '/providers/',
             data: JSON.stringify(data),
             headers: { 'Content-Type': 'application/json'}
         }).then(function successCallback(response) {
@@ -62,41 +62,26 @@ loginApp.factory('providersPostFactory', function () {
     return factory;
 });
 
-loginApp.factory('Authentication',['$http', '$cookies', function() {
-
+loginApp.factory('loginFactory', function () {
     var factory = {};
 
-    factory.Authentication = {
-        getAuthenticatedAccount: factory.getAuthenticatedAccount(),
-        isAuthenticated: factory.isAuthenticated(),
-        login: factory.loginUser(),
-        register: factory.registerUser(),
-        setAuthenticatedAccount: factory.setAuthenticatedAccount(),
-        unauthenticate: factory.unauthenticate()
-    }
 
-    factory.registerUser = function(username, password, email) {
-        //
-        return $http.post(providersApiEndPoint + '/api/v1/accounts/', {
-            username: username,
-            password: password,
-            email: email
+    factory.getUserCredentials = function ($scope, $http, callback) {
+        var localProviders = [];
+        $http({
+            method: 'GET',
+            url:apiEndPointPrefix + '/users/'
+        }).then(function successCallback(response) {
+            //console.log(response.data.length);
+
+            for(var prov in response.data)
+                localProviders.push(response.data[parseInt(prov)]);
+
+            callback(localProviders);
+
+        }, function errorCallback(response){
+            callback(localProviders);
         });
     };
 
-    factory.loginUser = function(email, password) {
-        return $http.post('/api/v1/auth/login/', {
-            email: email, password: password
-        });
-    };
-
-    factory.getAuthenticatedAccount = function(){
-        if (!$cookies.authenticatedAccount) {
-            return;
-        }
-        return JSON.parse($cookies.authenticatedAccount);
-    };
-
-
-
-}]);
+});

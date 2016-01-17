@@ -9,7 +9,7 @@ from providers.serializers import ProvidersSerializer
 @api_view(['GET', 'POST'])
 def providers_list(request):
     """
-    List all code providers, or create a new snippet.
+    List all code providers, or create a new provider.
     """
     if request.method == 'GET':
         providers = Providers.objects.all()
@@ -23,31 +23,23 @@ def providers_list(request):
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
-    elif request.method == 'DELETE':
-        snippet.delete()
-        return Response(status=status.HTTP_204_NO_CONTENT)
 
 
 @api_view(['DELETE'])
 def provider_detail(request, pk):
     """
-    Delete a snippet instance.
+    Delete a provider instance.
     """
-
-    try:
-        snippet = Snippet.objects.get(pk=pk)
-    except Snippet.DoesNotExist:
-        return Response(status=status.HTTP_404_NOT_FOUND)
 
     try:
         provider = Providers.objects.get(pk=pk)
     except Providers.DoesNotExist:
         return HttpResponse(status=404)
 
-    try:
-        snippet = Providers.objects.get(pk=pk)
-    except Providers.DoesNotExist:
-        return Response(status=status.HTTP_404_NOT_FOUND)
+    provider.delete()
+    return Response(status=status.HTTP_204_NO_CONTENT)
+
+    
 
 
 # @api_view(('GET',))
