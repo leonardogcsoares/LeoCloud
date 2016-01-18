@@ -12,7 +12,7 @@ Just checking to see if updated
 import os
 import sys
 
-# sys.path.insert(0, '/opt/python/current/app/cloud_backend')
+sys.path.insert(0, '/opt/python/current/app/cloud_backend')
 
 from django.core.wsgi import get_wsgi_application
 

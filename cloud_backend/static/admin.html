@@ -11,6 +11,8 @@
     <link href="/static/Content/material.css" rel="stylesheet" type="text/css">
 
   </head><body  ng-controller="LoginController">
+
+    <div class="wrapper">
     <div class="navbar navbar-default navbar-static-top">
       <div class="container">
         <div class="navbar-header">
@@ -140,16 +142,17 @@
     <footer class="section section-primary">
       <div class="container">
         <div class="row">
-            <div class="col-sm-6 col-md-4">
+            <div id="leocloud-footer" class="col-sm-6 col-md-4">
                 <h1>LeoCloud</h1>
             </div>
-            <div class="col-md-7 pull-right">
-                <a id="github-admin-link" href="https://github.com/leonardogcsoares/LeoCloud"><h4>
-                    https://github.com/leonardogcsoares/LeoCloud</h4></a>
+            <div id="github-footer" class="col-md-7 pull-right">
+                <a id="github-link" href="https://github.com/leonardogcsoares/LeoCloud">
+                    <h4>https://github.com/leonardogcsoares/LeoCloud</h4></a>
             </div>
         </div>
       </div>
     </footer>
+    </div>
     <!-- Vendor Libs: jQuery only used for Bootstrap functionality -->
     <script src="/static/Scripts/angular.js"></script>
     <script src="/static/Scripts/angular-route.js"></script>

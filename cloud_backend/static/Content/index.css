@@ -6795,8 +6795,9 @@ li.media:hover {
     background: #BFE5A8;
 }
 
-.github-footer {
-  padding: auto 0;
+#github-footer {
+    height: 25px;
+    margin: 25px 0;
 }
 
 #github-link {
@@ -6805,4 +6806,37 @@ li.media:hover {
 
 #github-link:hover {
     color: #d43f3a;
+}
+
+
+footer {
+    width:100%;
+    height:100px;
+    position:absolute;
+    bottom:0;
+    left:0;
+}
+
+footer.section {
+    position: absolute;
+    padding: 0 0;
+}
+
+footer.section div{
+    height: 100px;
+}
+
+#input-search-price {
+    height: 40px;
+}
+
+
+#leocloud-footer h1{
+    height: 50px;
+    margin: 25px 0;
+}
+
+.wrapper {
+    min-height: 100%;
+    position: relative;
 }

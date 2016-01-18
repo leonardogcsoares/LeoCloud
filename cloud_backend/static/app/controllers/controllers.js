@@ -6,46 +6,34 @@ providersApp.controller('ProvidersController', function ($scope, $http, provider
 
     //I like to have an init() for controllers that need to perform some initialization. Keeps things in
     //one place...not required though especially in the simple example below
-    init();
-    var cpuSlider;
-    var ramSlider;
-    var discoSlider;
+    //Initializes the slider
+    var cpuSlider = $('#cpu').slider();
+    var ramSlider = $('#ram').slider();
+    var discoSlider = $('#disco').slider();
+
+    // Slider Event Triggers
+    // Updates position of sliders according to position
+    cpuSlider.on('slide', function(slideEvent) {
+        $('#cpuSliderValue').text(slideEvent.value);
+        $scope.$apply();
+    });
+    ramSlider.on('slide', function(slideEvent) {
+        $('#ramSliderValue').text(slideEvent.value);
+        $scope.$apply();
+    });
+    discoSlider.on('slide', function(slideEvent) {
+        $('#discoSliderValue').text(slideEvent.value);
+        $scope.$apply();
+    });
 
 
-    function init() {
-        console.log("called");
-        providersGetFactory.getProvidersFromDb($scope, $http, function (retrievedProviders) {
-            $scope.providers = retrievedProviders;
 
+    providersGetFactory.getProvidersFromDb($scope, $http, function (retrievedProviders) {
+        $scope.providers = retrievedProviders;
 
-            $scope.setProviderImageLinks();
-        });
+        $scope.setProviderImageLinks();
+    });
 
-        // Initializes the slider
-        cpuSlider= $('#cpu').slider();
-        ramSlider = $('#ram').slider();
-        discoSlider = $('#disco').slider();
-
-        // Updates position of sliders according to position
-        cpuSlider.on('slide', function(slideEvent) {
-           $('#cpuSliderValue').text(slideEvent.value);
-
-            // Refreshes the List
-            $scope.$apply();
-        });
-        ramSlider.on('slide', function(slideEvent) {
-            $('#ramSliderValue').text(slideEvent.value);
-
-            // Refreshes the List
-            $scope.$apply();
-        });
-        discoSlider.on('slide', function(slideEvent) {
-            $('#discoSliderValue').text(slideEvent.value);
-
-            // Refreshes the List
-            $scope.$apply();
-        });
-    }
 
     $scope.priceFilter = function(provider) {
         var comparePrice;
@@ -73,7 +61,7 @@ providersApp.controller('ProvidersController', function ($scope, $http, provider
 
         return !provider.provider.localeCompare($scope.providerName);
         //return (provider.provider.isEqual($scope.providerName))
-    }
+    };
 
     $scope.setProviderImageLinks = function () {
         // Sets image link for each provider
@@ -171,7 +159,7 @@ loginApp.controller('LoginController', function ($scope, $http, providersPostFac
 
                 else {
                     // Show "Failed" feedback snackbar
-                    snackbarOptions.content = "Failed adding content to DB";
+                    snackbarOptions.content = "Incorrect data input";
                     $.snackbar(snackbarOptions).show();
 
                 }
